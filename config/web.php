@@ -10,8 +10,10 @@ $config = [
     'basePath' => dirname(__DIR__) . '/src',
     'bootstrap' => [],
     'aliases' => [
-        '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@vendor'  => __DIR__ . '/../vendor',
+        '@runtime' => __DIR__.'/../runtime',
+        '@bower'   => '@vendor/bower-asset',
+        '@npm'     => '@vendor/npm-asset',
     ],
     'logger' => [
         'traceLevel' => YII_DEBUG ? 3 : 0,
